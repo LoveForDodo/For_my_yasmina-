@@ -3,104 +3,168 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For My Yasmina 💞</title>
+<title>Yasmina’s Wonderland 💗🦋</title>
 
 <style>
+
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #ffeaf4, #e8f4ff);
+    background: linear-gradient(135deg, #f7dfff, #ffd6f2);
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
 }
 
-/* ===== شاشة الدخول ===== */
-#lockScreen {
+/* شاشة الدخول */
+#loginScreen {
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: rgba(255,255,255,0.92);
+    background: rgba(255, 240, 255, 0.96);
+    backdrop-filter: blur(6px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(4px);
-    z-index: 1000;
-}
-
-.lock-box {
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
     text-align: center;
-    width: 280px;
-    border: 3px solid #ff9acb;
+    padding: 20px;
 }
 
-.lock-box h2 {
-    margin-bottom: 15px;
-    color: #d64fa6;
+/* عنوان الدخول */
+#welcomeBox {
+    font-size: 30px;
+    color: #b400ff;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
-.lock-input {
-    width: 90%;
-    padding: 10px;
+/* مربع الباسورد */
+#passBox {
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #d67fff;
     border-radius: 10px;
-    border: 2px solid #ffb7dd;
-    margin-bottom: 15px;
-    font-size: 16px;
+    outline: none;
+    width: 70%;
 }
 
-.lock-btn {
-    background: #ff7fbf;
+/* زر الدخول */
+#enterBtn {
+    margin-top: 15px;
+    padding: 12px 28px;
+    background: #d67fff;
     color: white;
-    padding: 10px 25px;
     border: none;
-    border-radius: 20px;
-    font-size: 16px;
+    border-radius: 25px;
+    font-size: 18px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: .3s;
+}
+#enterBtn:hover {
+    background: #b400ff;
+    transform: scale(1.05);
 }
 
-.lock-btn:hover {
-    background: #ff5fab;
-}
-
-/* ===== عنوان البرواز ===== */
-.title-frame {
+/* عنوان الصفحة */
+.header-box {
     text-align: center;
-    margin: 25px auto 15px;
-    padding: 15px 30px;
-    border: 4px solid #ff9acb;
-    background: white;
-    border-radius: 18px;
+    margin: 25px auto;
+    padding: 15px 25px;
+    border: 4px solid #b400ff;
+    border-radius: 15px;
+    background: #fff;
     width: fit-content;
     font-size: 28px;
     font-weight: bold;
-    color: #d64fa6;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    color: #b400ff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
-/* ===== محتوى الصفحة باقيه ===== */
-.content {
-    text-align: center;
-    padding: 20px;
-    font-size: 20px;
-    color: #444;
-}
-
-/* ===== نجوم وبروفيلات صغيرة بتطلع ===== */
-.floatHeart {
+/* الفراشات */
+.butterfly {
     position: fixed;
     bottom: -20px;
-    color: #ff5faf;
-    font-size: 22px;
-    animation: floatUp 5s linear;
+    font-size: 28px;
+    animation: flyUp 4s linear;
     pointer-events: none;
 }
 
-@keyframes floatUp {
+@keyframes flyUp {
     0% { transform: translateY(0) scale(1); opacity: 1; }
-    100% { transform: translateY(-120vh) scale(1.6); opacity: 0; }
+    100% { transform: translateY(-120vh) scale(1.7); opacity: 0; }
+}
+
+/* زر الرسالة */
+.msg-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 14px 30px;
+    background: #c569ff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+.msg-btn:hover {
+    background: #9d3dff;
+    transform: scale(1.05);
+}
+
+/* صندوق الرسالة */
+#messageBox {
+    display: none;
+    background: rgba(255,255,255,0.85);
+    border-radius: 15px;
+    margin: 15px auto;
+    width: 90%;
+    max-width: 450px;
+    padding: 18px;
+    line-height: 1.8;
+    color: #5a3d7a;
+    font-size: 19px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* الصور والفيديو */
+.content-box {
+    width: 330px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.photo, video {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+/* زر تشغيل الفيديو */
+.vbtn {
+    margin: 10px auto;
+    padding: 10px 22px;
+    background: #b400ff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.vbtn:hover { background: #8c00cc; }
+
+.footer-text {
+    text-align: center;
+    margin: 30px 0 15px;
+    font-size: 20px;
+    color: #5a3d7a;
+    font-weight: bold;
+}
+
+/* Powered */
+.powered {
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0.7;
+    font-size: 14px;
 }
 </style>
 </head>
@@ -108,50 +172,106 @@ body {
 <body>
 
 <!-- ===== شاشة الدخول ===== -->
-<div id="lockScreen">
-    <div class="lock-box">
-        <h2>Yasmina’s Wonderland 💗🦋</h2>
-        <input id="passInput" class="lock-input" type="password" placeholder="♡ Enter the key">
-        <button class="lock-btn" onclick="unlock()">Enter</button>
-        <p id="error" style="color:red; display:none; margin-top:10px;">غلط يا سمسم 🙈🌸</p>
-    </div>
+<div id="loginScreen">
+    <div id="welcomeBox">Yasmina’s Wonderland 💗🦋</div>
+    <input type="password" id="passBox" placeholder="ادخلي مملكتك يا ياسمينا 🦋💗">
+    <button id="enterBtn" onclick="checkPass()">Enter</button>
 </div>
 
 <script>
-function unlock() {
-    const input = document.getElementById("passInput").value;
-    if (input === "♡Yasmina") {
-        document.getElementById("lockScreen").style.display = "none";
+function checkPass() {
+    let p = document.getElementById("passBox").value;
+    if (p === "♡Yasmina") {
+        document.getElementById("loginScreen").style.display = "none";
     } else {
-        document.getElementById("error").style.display = "block";
+        alert("غلط يا سمسم 🙈😂 جربي تاني");
     }
 }
 </script>
 
-<!-- ===== عنوان الصفحة ===== -->
-<div class="title-frame">
-    Yasmina’s Wonderland 💗🦋
+<!-- ===== عنوان فوق ===== -->
+<div class="header-box">For My Yasmina 💞</div>
+
+<!-- ===== صور وفيديو ===== -->
+<div class="content-box">
+    <img src="Snapchat-137673274.jpg" class="photo">
 </div>
 
-<!-- ===== المحتوى الأولي ===== -->
-<div class="content">
-    <!-- هنا تقدر تضيف صور – فيديو – كلام – اللي انت عايزه -->
-    <p>Welcome princess Yasmina 💞🌸</p>
+<div class="content-box">
+    <img src="IMG-20251130-WA0049.jpg" class="photo">
 </div>
 
-<!-- ===== نجوم وقلوب بتطلع ===== -->
+<div class="content-box">
+    <video id="yasVid" class="photo">
+        <source src="VID-20250901-WA0086.mp4">
+    </video>
+</div>
+
+<button class="vbtn" onclick="toggleVid()">▶ تشغيل / ⏸ إيقاف</button>
+
 <script>
-function floatHearts() {
-    let h = document.createElement("div");
-    h.classList.add("floatHeart");
-    h.innerHTML = "💗✨";
-    h.style.left = Math.random() * window.innerWidth + "px";
-    h.style.fontSize = (Math.random() * 15 + 20) + "px";
-    document.body.appendChild(h);
-    setTimeout(() => h.remove(), 5000);
+function toggleVid() {
+    let v = document.getElementById("yasVid");
+    if (v.paused) { v.play(); event.target.innerText = "⏸ إيقاف"; }
+    else { v.pause(); event.target.innerText = "▶ تشغيل"; }
 }
+</script>
 
-setInterval(floatHearts, 600);
+<!-- ===== زر الرسالة ===== -->
+<button class="msg-btn" onclick="toggleMsg()">Massage for You 🥰♥️</button>
+
+<div id="messageBox">
+يا سمسم… والله وجودِك في حياتي من أكتر الحاجات اللي أنا ممتنّ لها.
+ربنا يخلّيكي ليا يا أحن وأجمل أخت. ❤️ <br><br>
+
+إنتي فاكرة نفسك قليلة؟  
+ده انتي بتملي الدنيا بهجة من غير ما تحاولي حتى…  
+وبعدين متبقيش شايلة الدنيا على دماغك…  
+اهدي كده، وافتكري إنك مهما اتعصبتي واتخنقتي…  
+أنا هنا، ومش هطير يعني 😂💗 <br><br>
+
+وبطّلي بقا "أنا مش عايزة أتقل عليك" دي…  
+يا ستي تقلّي براحتك، أنا ابن اختك مش موظف شكاوي 😭😂💞 <br><br>
+
+امتحاناتك؟ ضغطك؟ النكد؟ كله يعدّي…  
+المهم إنك بخير، وبرضو مش هسيبك تتسحّلي لوحدك 🫶🏼😌 <br><br>
+
+ولو مش هتطلبي مني وقت ما تبقي مخنوقة، هتطلبي من مين؟  
+من الفرخة؟ 😂💗  
+ولا خلاص عشان "أحدهم" جه 🙄😂 <br><br>
+
+سمسم…  
+إنتي مش حملة زيادة ولا عبء…  
+إنتي وجع دماغ لطيف…  
+وأنا بصراحة اتعودت عليه ومبسوط بيه كمان 😭🩷🫶🏼
+وافتكري اني هتعشي مرتين في فرحك😂😌
+</div>
+
+<script>
+function toggleMsg() {
+    let b = document.getElementById("messageBox");
+    b.style.display = b.style.display === "block" ? "none" : "block";
+}
+</script>
+
+<!-- ===== جملة النهاية ===== -->
+<div class="footer-text">كل هذا صُنع بكل حب ل فولّه 🙈🥰♥️</div>
+
+<!-- Powered -->
+<div class="powered">Powered by Body © 2025</div>
+
+<!-- ===== فراشات طايرة ===== -->
+<script>
+function createButterfly() {
+    const b = document.createElement("div");
+    b.classList.add("butterfly");
+    b.innerHTML = "🦋";
+    b.style.left = Math.random() * window.innerWidth + "px";
+    b.style.fontSize = (Math.random() * 15 + 25) + "px";
+    document.body.appendChild(b);
+    setTimeout(()=>b.remove(), 4000);
+}
+setInterval(createButterfly, 450);
 </script>
 
 </body>
