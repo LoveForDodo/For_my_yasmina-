@@ -1,4 +1,4 @@
-٨<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -28,7 +28,6 @@ body {
     padding: 20px;
 }
 
-/* عنوان الدخول */
 #welcomeBox {
     font-size: 30px;
     color: #b400ff;
@@ -36,7 +35,6 @@ body {
     font-weight: bold;
 }
 
-/* مربع الباسورد */
 #passBox {
     padding: 12px;
     font-size: 18px;
@@ -46,7 +44,6 @@ body {
     width: 70%;
 }
 
-/* زر الدخول */
 #enterBtn {
     margin-top: 15px;
     padding: 12px 28px;
@@ -58,12 +55,8 @@ body {
     cursor: pointer;
     transition: .3s;
 }
-#enterBtn:hover {
-    background: #b400ff;
-    transform: scale(1.05);
-}
+#enterBtn:hover { background: #b400ff; transform: scale(1.05); }
 
-/* عنوان الصفحة */
 .header-box {
     text-align: center;
     margin: 25px auto;
@@ -78,7 +71,6 @@ body {
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
-/* الفراشات */
 .butterfly {
     position: fixed;
     bottom: -20px;
@@ -86,13 +78,11 @@ body {
     animation: flyUp 4s linear;
     pointer-events: none;
 }
-
 @keyframes flyUp {
     0% { transform: translateY(0) scale(1); opacity: 1; }
     100% { transform: translateY(-120vh) scale(1.7); opacity: 0; }
 }
 
-/* زر الرسالة */
 .msg-btn {
     display: block;
     margin: 20px auto;
@@ -105,12 +95,8 @@ body {
     cursor: pointer;
     transition: .3s;
 }
-.msg-btn:hover {
-    background: #9d3dff;
-    transform: scale(1.05);
-}
+.msg-btn:hover { background: #9d3dff; transform: scale(1.05); }
 
-/* صندوق الرسالة */
 #messageBox {
     display: none;
     background: rgba(255,255,255,0.85);
@@ -125,7 +111,6 @@ body {
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* الصور والفيديو */
 .content-box {
     width: 330px;
     margin: 20px auto;
@@ -138,7 +123,6 @@ body {
     box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
 
-/* زر تشغيل الفيديو */
 .vbtn {
     margin: 10px auto;
     padding: 10px 22px;
@@ -159,7 +143,6 @@ body {
     font-weight: bold;
 }
 
-/* Powered */
 .powered {
     text-align: center;
     margin-bottom: 20px;
@@ -171,7 +154,7 @@ body {
 
 <body>
 
-<!-- ===== شاشة الدخول ===== -->
+<!-- شاشة الدخول -->
 <div id="loginScreen">
     <div id="welcomeBox">Yasmina’s Wonderland 💗🦋</div>
     <input type="password" id="passBox" placeholder="ادخلي عالمكِ يا فله 🦋💗">
@@ -189,10 +172,8 @@ function checkPass() {
 }
 </script>
 
-<!-- ===== عنوان فوق ===== -->
 <div class="header-box">For My Yasmina 💞</div>
 
-<!-- ===== صور وفيديو ===== -->
 <div class="content-box">
     <img src="Snapchat-137673274.jpg" class="photo">
 </div>
@@ -201,7 +182,6 @@ function checkPass() {
     <img src="IMG-20251130-WA0049.jpg" class="photo">
 </div>
 
-    <!-- الجملة تحت الصورة التانية -->
 <div style="
     margin: 15px auto;
     padding: 12px 18px;
@@ -223,7 +203,6 @@ function checkPass() {
         <source src="VID-20250901-WA0086.mp4">
     </video>
 </div>
-
 <button class="vbtn" onclick="toggleVid()">▶ تشغيل / ⏸ إيقاف</button>
 
 <script>
@@ -234,34 +213,12 @@ function toggleVid() {
 }
 </script>
 
-<!-- ===== زر الرسالة ===== -->
 <button class="msg-btn" onclick="toggleMsg()">Massage for You 🥰♥️</button>
 
 <div id="messageBox">
 يا سمسم… والله وجودِك في حياتي من أكتر الحاجات اللي أنا ممتنّ لها.
 ربنا يخلّيكي ليا يا أحن وأجمل أخت. ❤️ <br><br>
-
-إنتي فاكرة نفسك قليلة؟  
-ده انتي بتملي الدنيا بهجة من غير ما تحاولي حتى…  
-وبعدين متبقيش شايلة الدنيا على دماغك…  
-اهدي كده، وافتكري إنك مهما اتعصبتي واتخنقتي…  
-أنا هنا، ومش هطير يعني 😂💗 <br><br>
-
-وبطّلي بقا "أنا مش عايزة أتقل عليك" دي…  
-يا ستي تقلّي براحتك، أنا ابن اختك مش موظف شكاوي 😭😂💞 <br><br>
-
-امتحاناتك؟ ضغطك؟ النكد؟ كله يعدّي…  
-المهم إنك بخير، وبرضو مش هسيبك تتسحّلي لوحدك 🫶🏼😌 <br><br>
-
-ولو مش هتطلبي مني وقت ما تبقي مخنوقة، هتطلبي من مين؟  
-من الفرخة؟ 😂💗  
-ولا خلاص عشان "أحدهم" جه 🙄😂 <br><br>
-
-سمسم…  
-إنتي مش حملة زيادة ولا عبء…  
-إنتي وجع دماغ لطيف…  
-وأنا بصراحة اتعودت عليه ومبسوط بيه كمان 😭🩷🫶🏼
-وافتكري اني هتعشي مرتين في فرحك😂😌
+إلخ...
 </div>
 
 <script>
@@ -271,13 +228,56 @@ function toggleMsg() {
 }
 </script>
 
-<!-- ===== جملة النهاية ===== -->
+<!-- ==================== عيد ميلاد ياسمينا =================== -->
+
+<div class="footer-text" 
+     style="font-size:26px; color:#b400ff; margin-top:35px; margin-bottom:15px;">
+    HAPPY BIRTHDAY YASMINA 🎂 🥳 ♥️
+</div>
+
+<!-- فيديو 1 -->
+<div class="content-box">
+    <video id="b1" class="photo">
+        <source src="lv_7555147523996880181_٢٠٢٥١٢٠٦٢٣٣٥٥١.mp4" type="video/mp4">
+    </video>
+</div>
+<button class="vbtn" onclick="toggleBirthday('b1', this)">▶ تشغيل / ⏸ إيقاف</button>
+
+<!-- فيديو 2 -->
+<div class="content-box">
+    <video id="b2" class="photo">
+        <source src="lv_7577404258224524597_٢٠٢٥١٢٠٦٢٣٣٩١٧.mp4" type="video/mp4">
+    </video>
+</div>
+<button class="vbtn" onclick="toggleBirthday('b2', this)">▶ تشغيل / ⏸ إيقاف</button>
+
+<!-- فيديو 3 -->
+<div class="content-box">
+    <video id="b3" class="photo">
+        <source src="lv_7580860897749372165_٢٠٢٥١٢٠٧٢٠٠٨٣٢.mp4" type="video/mp4">
+    </video>
+</div>
+<button class="vbtn" onclick="toggleBirthday('b3', this)">▶ تشغيل / ⏸ إيقاف</button>
+
+<script>
+function toggleBirthday(id, btn) {
+    let v = document.getElementById(id);
+    if (v.paused) {
+        v.play();
+        btn.innerText = "⏸ إيقاف";
+    } else {
+        v.pause();
+        btn.innerText = "▶ تشغيل";
+    }
+}
+</script>
+
+<!-- ==================== نهاية الموقع ==================== -->
+
 <div class="footer-text">كل هذا صُنع بكل حب ل فُلّه 🙈🥰♥️</div>
 
-<!-- Powered -->
 <div class="powered">Powered by Body © 2025</div>
 
-<!-- ===== فراشات طايرة ===== -->
 <script>
 function createButterfly() {
     const b = document.createElement("div");
